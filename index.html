@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title-heading">Survey Form</h1>
+            <p class="title-description">Thank you for taking your time to give us feedback</p>
+        </header>
+
+        <form action="#" class="survey-form">
+            <div class="form-group">
+                <label for="name" class="name-label">Name</label>
+                <input type="text" name="name" class="name-label" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="email-label">Email</label>
+                <input type="email" name="email" class="name-label" placeholder="Enter your mail address" required>
+            </div>
+            <div class="form-group">
+                <label for="age" class="age-label">Age</label>
+                <input type="number" name="age" min="1" max="99" class="age-label" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group role">
+                <label for="occupation" class="role-label">Choose A Role That Best Describes You</label>
+                <select name="occupation" class="role-heading" id="occupation">
+                    <option selected disabled value>Select Your Role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rating" class="name-label">Would You Recommend Our Product To A Friend ?</label>
+                <div class="radio-group">
+                    <input type="radio" name="rating" id="never" value="never">
+                    <label for="rating-never"> Never </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="rating" id="maybe" value="maybe">
+                    <label for="rating-maybe"> Maybe </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="rating" id="likely" value="likely">
+                    <label for="rating-likely"> Likely </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="rating" id="definitely" value="definitely">
+                    <label for="rating-never"> Definitely </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="product-likes" class="likes-label">Select Things That You Liked About Our Product</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="liked" id="ux" value="ux">
+                    <span>User Experience</span>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="liked" id="delivery" value="delivery-time">
+                    <span>Delivery Time</span>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="liked" id="simplicity" value="simplicity">
+                    <span>Simplicity</span>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="liked" id="product" value="product">
+                    <span>Product</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="remarks" class="remarks-label">Remarks</label>
+                <textarea name="remarks" id="remarks" placeholder="Tell Us How We Can Improve.."></textarea>
+            </div>
+        </form>
+            <div class="form-group">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
